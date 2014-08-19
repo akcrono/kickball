@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basic HTML Page</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+    <h1> These are the kickball teams</h1>
+      <ul>
+        <% @teams.each do |team| %>
+        <li><a href="teams/<%= team%>"><%= team%></a></li>
+        <%end%>
+        </ul>
+    <h1> These are the kickball positions</h1>
+      <ul>
+        <% @positions.each do |position| %>
+        <li><a href="positions/<%= position%>"><%= position%></a></li>
+        <%end%>
+        </ul>
+  </body>
+</html>
